@@ -25,7 +25,7 @@
 
 }
 .contact-image {
-  width: 450px;
+  width: 500px;
   object-fit: contain;
 }
 .form-div {
@@ -51,7 +51,7 @@
   margin-bottom: 8px;
 }
 .submit-button {
-  margin-left: 22.5%;
+  margin-left: 340  px;
   font-size: 25px;
   padding: 10px 20px;
   border-radius: 20px;
@@ -63,7 +63,32 @@
   color: #edf0f1;
 }
 
+@media (max-width: 500px) {
+  .contact-form form{
+    font-size: 20px;
+  }
+  .accept {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .contact-image {
+    width: 120px;
+  }
+  .text-box {
+    width: 90%;
+  }
+  .text-area {
+    width: 90%;
+  }
+  .submit-button {
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 85px;
+  }
 
+}
 /*
   display: flex;
   flex-direction: column;
