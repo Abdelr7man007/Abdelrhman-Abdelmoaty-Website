@@ -1,0 +1,52 @@
+.fa {
+  padding: 12px;
+  font-size: 23px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook,
+.fa-whatsapp,
+.fa-youtube {
+  background: #edf0f1;
+  color: #24252A;
+}
+.contact-info  p {
+  display: inline-block;
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+.contact-info  div {
+  width: 400px;
+
+}
+.contact-info {
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.alternative:visited{
+  color: inherit;
+}
+
+@media (max-width: 750px) {
+  .contact-info  div {
+    margin-left: 35px;
+  }
+  .contact-info  p {
+    font-size: 22px;
+  }
+
+}
