@@ -1,7 +1,7 @@
 body {
   padding: 0;
   margin: 0;
-  margin-top: 75.5px;
+  margin-top: 100px;
   margin-bottom: 10000px;
   background-color: #24252A;
   color: #edf0f1;
@@ -14,7 +14,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   top: 0;
   left: 0;
@@ -23,6 +23,7 @@ body {
   border-color: rgba(237, 240, 241, 0.9);
   border-width: 1px;
   background-color: rgba(36, 37, 42, 0.95);
+  z-index: 100;
 
 }
 .logo {
@@ -94,11 +95,17 @@ body {
   font-weight: 500;
   margin-right: 50px;
   padding: 5px 10px;
+  cursor: pointer;
 
 }
 .header button:hover {
-  background-color: rgba(237, 237, 237, 0.9);
-  cursor: pointer;
+/*  background-color: rgba(237, 237, 237, 0.9);
+*/
+  border-style: solid;
+  border-color: #edf0f1;
+  color: #edf0f1;
+  background-color: #24252A;
+  border-width: 2px;
 }
 img {
   height: 500px;
@@ -106,7 +113,7 @@ img {
   border-radius: 35%;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 750px) {
   .header ul li {
     font-size: 13px;
     margin: 0 7px;
@@ -128,10 +135,46 @@ img {
   }
 
 }
-/*
-.header li:hover + link-hr {
-  background-color: red;
+
+/* ***************************** Content ********************** */
+.info p {
+  display: inline-block;
+
 }
-li:hover + link-hr  {
-  background-color: red;
-*/
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 30px;
+  margin-top: 150px;
+}
+.info span {
+  color: red;
+}
+.info img {
+  position: relative;
+  top: -400px;
+  right: -600px;
+  z-index: 1;
+  object-fit: fill;
+  display: none;
+}
+.info hr {
+  border-color: rgba(237, 240, 241, 0.9);
+  border-style: none none solid;
+  border-width: 1px;
+  margin: 0;
+  width: 100%;
+  margin-top: 50px;
+
+}
+
+@media (max-width: 750px) {
+  .info {
+    margin-top: 30px;
+    font-size: 20px;
+  }
+  .info {
+    margin-top: 40px;
+  }
+}
