@@ -18,19 +18,28 @@
 </head>
 <body>
   <header class="header">
-    <a href="#" target="_blank"><h1 class="logo">Abdelmoaty</h1></a>
+    <a href="index.html" target="_blank"><h1 class="logo">Abdelmoaty</h1></a>
     <nav>
       <ul>
         <li><a href="projects.html" target="_blank">Projects</a></li>
         <li><a href="services.html" target="_blank">Services</a></li>
-        <li><a href="about.html" target="_blank">About</a></li>
+        <li><a href="about.html" target="_blank">About us</a></li>
       </ul>
     </nav>
     <a href="contact.html" target="_blank"><button>Contact</button></a>
   </header>
-  <section class="contact">
-    <h1 class="contact-logo">Contact us</h1>
+  <section class="contact-heading">
+    <a href="#"><h1 class="contact-logo">Contact us</h1></a>
   </section>
+  <section>
+    <form  class="contact-form" action="https://formsubmit.co/abdelr7manabdelmoaty@gmail.com" method="post">
+      <input class="form-item" type="text" name="Name" value="" placeholder="Your name">
+      <input class="form-item" type="email" name="Email" value="" placeholder="Your email">
+      <textarea class="form-textArea" name="Message" rows="" cols="" placeholder="Your message"></textarea>
+      <input class="submit-button" type="submit" name="" value="Submit">
+    </form>
+  </section>
+  <!--
   <section class="contact-form">
     <form action="https://formsubmit.co/abdelr7manabdelmoaty@gmail.com" method="post">
       <div class="form-div">
@@ -40,14 +49,19 @@
         <input class="text-box" type="email" name="email" value=""><br>
         <label class="form-item" for="">Your message:</label><br>
         <textarea class="text-area" name="message" rows="" cols=""></textarea><br>
-        <input class="" type="checkbox" name="accept-terms" value="">
-        <label class="" for="">Accept terms and conditions</label><br>
+        <div class="accept">
+          <input class="" type="checkbox" name="accept-terms" value="">
+          <label for="">Accept terms and conditions</label><br>
+        </div>
         <input class="submit-button" type="submit" name="submit" value="Submit"><br>
       </div>
+//////
       <div >
         <img class="contact-image" src="../images/contact.png" alt="">
         </div>
+//////
     </form>
   </section>
+  ---->
 </body>
 </html>
